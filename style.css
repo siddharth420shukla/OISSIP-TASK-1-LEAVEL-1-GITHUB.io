@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Css Variables */
+:root{
+    --navbar-height: 59px;
+}
+body{
+    background-color: antiquewhite;
+}
+/* Navigation Baar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+/* Logo and image */
+#logo{
+    margin: 5px 34px;
+
+}
+#logo img{
+    height: 84px;
+    margin: 3px 6px;
+    border-radius: 35px;
+
+}
+
+
+/* List Styling */
+#navbar ul{
+    display: flex;
+    
+    
+
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+
+}
+#navbar ul li{
+ 
+  list-style: none;
+  font-size: 1.3rem;
+  
+
+}
+#navbar ul li a{
+   color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 23px;
+  text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+   color: blue;
+   background-color: white;
+   transition: .5s;
+
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 578px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+   background: url('box6.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Servicess Centre */
+.services-container{
+  background-color: rgb(214, 214, 247);
+}
+#services{
+    margin: 34px;
+    display: flex;
+    
+}
+#services .box{
+   border:2px solid red;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 30px;
+ background-color: rgb(255, 242, 242);
+
+}
+#services .box img{
+  height: 150px;
+  margin: auto;
+  display: block;
+  border-radius: 12px;
+
+}
+/* Clint Section */
+#clint-section{
+    height: 244px;
+   
+
+}
+#clint-section::before{
+    content: "";
+    position: absolute;
+    background: url('box3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+#clints{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clint-item{
+    padding: 20px;
+}
+#clints img{
+  height: 130px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+   
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7; 
+    background: url('contaict1.jpg');
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px;
+}
+#contact-box input,
+#contact-box textarea,
+#contact-box button{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 50%;
+    
+}
+#contact-box label{
+    font-size: 1.3rem;
+
+}
+#about{
+   background: url('Aboutb.jpg') no-repeat center center/cover;
+  }
+  #post{
+      margin: 34px;
+      display: flex;
+      
+  }
+  #post .box{
+     border:2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+  background-color: rgb(175, 175, 247);
+  
+  }
+  #post .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    border-radius: 12px;
+    border-radius: 40px;
+  
+  }
+  
+/* utility Clss */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(161, 156, 156);
+    color: white;
+    margin: 17px;
+    font-size: 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.center{
+    text-align: right;
+}
+.header{
+    background: url('background.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 30px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+nav ul li a{
+   
+    text-decoration: none;
+    color: #fff;
+    
+}
+nav ul li:hover:after{
+
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: .5s;
+    width: 100%;   
+}
+.head{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 2rem;
+    color: rgb(246, 252, 255);
+
+}
